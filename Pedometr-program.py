@@ -99,10 +99,3 @@ def accept_package(data):
     show_message(time_str, total_steps, total_distance, calories)
 
     return storage_data
-
-
-# Тестирование
-if __name__ == "__main__":
-    accept_package(("09:00:00", 5000))
-    accept_package(("10:30:00", 3000))
-    accept_package(("12:45:00", 7000))
