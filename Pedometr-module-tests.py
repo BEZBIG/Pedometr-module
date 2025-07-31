@@ -4,7 +4,7 @@ import importlib.util
 import sys
 
 # Импорт модуля
-spec = importlib.util.spec_from_file_location("pedometr_module", "pedometr-program.py")
+spec = importlib.util.spec_from_file_location("pedometr_module", "pedometr-module.py")
 pedometr = importlib.util.module_from_spec(spec)
 sys.modules["pedometr_module"] = pedometr
 spec.loader.exec_module(pedometr)
